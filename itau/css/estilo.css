@@ -1,0 +1,80 @@
+    /* criando um estilo no modo class */
+    .titulo{
+        font-size: 18px;
+        font-family: Geneva;
+        color: greenyellow;
+        font-weight: bold;
+    }
+    .menu{
+        font-size: 12;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: ghostwhite;
+        font-weight: bold;
+    }
+    body{
+        background-color: gray;
+    }
+
+    p{
+        color: white;
+    }
+
+    .lista{
+        font-size: 12px;
+        font-family: Verdana;
+        color: black;
+        
+    }
+
+    label{
+        font-size: 12px;
+        font-family: Verdana;
+        color: black;
+
+    }
+
+
+    .campo_nome{
+        background-color:#f5f56e;
+        position: absolute;
+        width: 200px;
+    }
+
+    #formulario_cadastro input.campo_email{
+        background-color: rgb(219, 77, 11);
+        position: absolute;
+        width: 260px;
+    }
+
+    #formulario_cadastro{
+        background-color: rgb(250, 250, 219);
+    }
+
+    .container {
+        border: 3px solid brown;
+        width: 1000px;
+    }
+
+    .div1 {
+        color: black;
+        background-color: red;
+    }
+
+    .div2 {
+        color: black;
+        background-color: green;
+    }
+
+    .div3 {
+        color:black;
+        background-color: blue;
+    }
+
+    .div4 {
+        color: black;
+        background-color: yellow;
+    }
+
+    .div5 {
+        color: orange;
+    }

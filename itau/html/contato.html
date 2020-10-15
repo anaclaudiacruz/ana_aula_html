@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="..\css\estilo.css">
+</header>
+
+<title>Curso de HTML na Gama Academy</title>
+
+<body>
+    <table border="0" width="100%" class="menu">
+        <tr>
+            <td align="center"><a href="..\html\index.html"><img src="..\imagens\logo.png"></a> </td>
+            <td></td>
+            <td align="center">QUEM SOMOS</td>
+            <td align="center">CURSOS ONLINE</td>
+            <td align="center">GAMA EXPERIENCE</td>
+            <td align="center">PARA EMPRESAS</td>
+            <td align="center">CONTATO</td>
+            <td align="center">CONTEÚDO</td>
+        </tr>>
+
+
+        <br>
+
+    </table>
+
+    <form id="formulario_cadastro" method="POST">
+        <fieldset>
+            <legend class="titulo">Formulário de Cursos da Gama Academy</legend>
+            <label>Nome: </label><input class="campo_nome" type="text" name="nome" required><br><br>
+            <label>Email: </label><input class="campo_email" type="email" name="email" required><br><br>
+            <label>Senha: </label><input type="password" name="senha" required><br><br>
+            <label>Data de nascimento: </label><input type="date" name="data_nascimento" required><br><br>
+            <input type="radio" name="opcao1" value="Masculino"><b class="lista">Masculino</b>
+            <input type="radio" name="opcao1" value="Feminino"><b class="lista"> Feminino</b><br><br>
+            <label>Cursos: </label><select required>
+                <option value=""></option>
+                <option value="CSS">CSS</option>
+                <option value="XML">XML</option>
+                <option value="HTML">HTML</option>
+                <option value="JS">JS</option>
+                <option value="PHP">PHP</option>
+            </select><br><br>
+            <label>Período a cursar: </label>
+            <input type="checkbox" name="opcao" value="op1">Manhã
+            <input type="checkbox" name="opcao" value="op2">Tarde
+            <input type="checkbox" name="opcao" value="op3">Noite<br><br>
+            <label>Anexar Documento: </label><input type="file" name="arquivo"><br><br>
+            <input type="submit" value="enviar">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

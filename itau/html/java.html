@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+    <link rel="stylesheet" href="..\css\estilo.css">
+
+    <script>
+        //window.alert("Bem vindo a página em JavaScript");
+        var empresa="Gama Academy";
+        var curso="Java Script";
+        var separador=" - ";
+        // alert("Bem vindo ao curso "+curso + " da empresa "+separador+empresa);
+        // var nome=prompt("Bem vindo a Gama Academy, digite o seu nome","Insira o seu nome");
+        // document.write("Boa tarde "+nome+ " seja bem vindo");
+        function msn()
+        {
+
+            alert("Meu colega como tu é curioso!!!");
+        }
+
+        function validar_campos()
+        {
+            var nome = formuser.nome.value;
+            var email = formuser.email.value;
+            var senha = formuser.senha.value;
+
+            if(nome ==""){
+                alert("Preencha o campo Nome ");
+                formuser.nome.focus();
+                return false;
+            }
+
+            if(email =="" || email.indexOf('@')==-1){
+                alert("Preencha o campo email, com um email válido");
+                formuser.email.focus();
+                return false;
+            }
+
+            if(senha=="" || senha.length<=5){
+                alert("Preencha o campo senha!!! - Com no mínimo 6 caracteres" );
+                formuser.senha.focus();
+                return false;
+            }
+
+            alert("Bem vindo "+nome + " iremos enviar a nossa proposta para o seu email "+email);
+        }
+
+
+    </script>
+</header>
+<title>Página em JS</title>
+
+<body>
+<!--     comentário em html-->
+
+<!-- chamar uma funçãok em java script>-->
+<!-- <input type="button" onclick="msn()" value="Exibir Mensagem"> -->
+
+<form id="formuser" method="POST">
+Nome: <input type="text" name="nome"><br><br>
+E-mail:<input type="text" name="email"><br><br>
+Senha:<input type="password" name="senha"><br><br>
+
+<input type="submit" onclick="return validar_campos()">
+
+</form>
+
+
+</body>
+
+</html>
